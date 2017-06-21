@@ -6,10 +6,15 @@ nav {
     background-color: white;
 }
 
+.row{
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0!important;
+}
+
 .menu-list {
     display: inline-block;
 }
-
 
 .menu_item {
     display: inline-block;
@@ -64,7 +69,7 @@ nav {
 
 .banner {
     width: 100%;
-    height: 450px;
+    height: 500px;
     background-color: black;
     background-image: url('../images/bg.jpg');
     background-size: cover;
@@ -86,6 +91,8 @@ nav {
 .title label {
     font-size: 28px;
     color: #FF962F;
+    margin-top: 10px;
+    margin-left: 15px;
 }
 
 .map {
@@ -97,6 +104,56 @@ nav {
     background-position: center;
 }
 
+.wrapSocial{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.itemSocial{
+  max-width: 200px;
+  max-height: 200px;
+  width: 15vw;
+  height: 15vw;
+  margin: 15px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+.itemSocial label{
+  width: 100%;
+  text-align: center;
+  font-size: 21px;
+  color: #000;
+  margin-top: 2px;
+}
+.itemIconSocial{
+  width: 70%;
+  height: 70%;
+  background-color: #152E6F;
+  border-radius: 50%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.itemIconSocial img{
+  width: 60%;
+  height: 60%;
+}
+
+.itemIconSocial i{
+  font-size: 60px;
+  color: white;
+}
 .detail {
     text-align: center;
     font-size: 21px;
@@ -139,7 +196,7 @@ nav {
 }
 
 .bgOpacity {
-   
+
     opacity: 0;
     width: 100%;
     height: 100%;
@@ -201,6 +258,7 @@ nav {
 }
 .product .label label{
     font-size: 16px;
+    padding-top: 5px;
     color: #152e6f;
 }
 .product .container,
@@ -237,13 +295,25 @@ nav {
     width: 100%;
     height: 270px;
     background-color: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    background-size: cover;
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+}
+
+.bgOpacity_bannerText {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
 }
 
 .bannerText p {
-    font-size: 24px;
+    font-size: 42px;
+    color: white;
 }
 
 .news_img {
@@ -258,11 +328,27 @@ nav {
 .mini_banner {
     width: 100%;
     height: 150px;
-    background-color: blue;
+    background-color: #152E6F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini_banner .container{
+  height: 100%;
+}
+.mini_banner .row{
+  height: 100%;
+}
+.mini_banner .col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .moreicon{
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
@@ -275,6 +361,82 @@ nav {
     display: inline-block;
     margin: 2px;
 }
+
+.itemIconSocial.line:hover,
+.itemIconSocial.line.hover{
+  background-color: #00B900;
+}
+
+.itemIconSocial a.facebook {
+  background-color: #152E6F;
+}
+
+.itemIconSocial.facebook:hover,
+.itemIconSocial.facebook.hover{
+  background-color: #4165BA;
+}
+
+.itemIconSocial a.phone {
+  background-color: #152E6F;
+}
+
+.itemIconSocial.phone:hover,
+.itemIconSocial.phone.hover {
+  background-color: #72BCF0;
+}
+
+.itemIconSocial a.location {
+  background-color: #152E6F;
+}
+
+.itemIconSocial.location:hover,
+.itemIconSocial.location.hover{
+  background-color: #CA3A28;
+}
+
+.itemIconSocial.email:hover ,
+.itemIconSocial.email.hover{
+  background-color: #fb7d11;
+}
+
+footer{
+  background-color: #D2D2D2;
+}
+
+.footer_bar{
+  width: 100%;
+  height: auto;
+  background-color: #6B7AA3;
+
+}
+
+.footer_bar .s12{
+padding-top: 10px;
+box-sizing: border-box;
+}
+
+.footer_detail p{
+  font-size: 18px;
+}
+
+.footer_detail .col iframe{
+  margin-top: 20px;
+}
+
+.mini_iconSocial .wrapSocial .itemSocial{
+  width: 54px;
+  height: 58px;
+  margin: 2px;
+}
+
+.mini_iconSocial .wrapSocial .itemIconSocial i{
+  font-size: 18px;
+}
+
+.mini_iconSocial .wrapSocial .itemSocial label{
+  font-size: 16px;
+}
+
 @media only screen and (min-width: 1120px) {
     .container {
         width: 95%;
@@ -285,15 +447,29 @@ nav {
 @media only screen and (max-width: 1120px){
     .container {
         width: 100%;
-    } 
+    }
+
+    .brand-logo{
+      margin-left: 10px;
+    }
+
+    .menu_item{
+      padding: 5px;
+      padding-top: 8px;
+    }
+
+    .search{
+      margin-top: 5px;
+      width: 180px;
+    }
 
     .image_mini_thumnail .itemTitle h2 {
     font-size: 18.5px;
     }
 
 .image_mini_thumnail .bgOpacity p {
-   
+
     font-size: 14.5px;
-  
+
     }
 }
