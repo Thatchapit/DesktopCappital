@@ -141,6 +141,10 @@ width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
+
+.setTable.row .col.s4{
+    margin-left: 0;
+}
 .itemSocial{
   max-width: 130px;
   max-height: 130px;
@@ -491,11 +495,118 @@ box-sizing: border-box;
   font-size: 16px;
 }
 
+
+/* other page */
+.miniBanner{
+    width: 100%;
+    height: 200px;
+    background-color: red;
+    background-position: center;
+    background-size: cover;
+}
+
+.miniBanner .container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.miniBanner h2{
+    color: white;
+}
+
+.hightlightItem{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-image: url("../images/shutterstock_121286026.jpg");
+    background-size: cover;
+    margin:  10px 0;
+}
+
+.moveRight{
+
+        display: flex;
+    justify-content: flex-end;
+}
+
+.about{
+text-align: center;
+}
+
+.about p{
+    font-size: 21px;
+    line-height: 32px;
+}
+
+.about h3{
+    color: #EE9621;
+}
+
+.about .s7 p{
+    text-align: left;
+    margin-left: 15px;
+}
+
+.imageJoin{
+    height: 500px;
+    background-color: red;
+    background-image: url("../images/IMG_5583.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.join p{
+    font-size: 21px;
+}
+
+
+
+.inputContact h6 {
+  font-size: 18px;
+}
+
+.inputContact textarea {
+  background-color: #3A3A3A;
+  height: 80px;
+}
+
+.inputContact .btn {
+  margin: 10px 0 20px 0;
+  background-color: #152E6F;
+}
+
+input.input_contact_box {
+  background-color: #3A3A3A;
+  border: none;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+input[type=text]:focus:not([readonly]) {
+  border: none;
+  box-shadow: none;
+}
+.boxContenct {
+  background-color: #E0E0E0;
+  padding: 10px;
+}
+
 @media only screen and (min-width: 1120px) {
     .container {
         width: 95%;
     }
 }
+
+@media only screen and (max-width: 1325px) {
+   .about p{
+    font-size: 1.3vw;
+    line-height: 32px;
+     line-height: 2.5vw;
+}
+}
+
 
 
 @media only screen and (max-width: 1120px){
@@ -527,3 +638,12 @@ box-sizing: border-box;
 
     }
 }
+
+@media only screen and (max-width: 1010px) {
+   .about p{
+    font-size: 1.5vw;
+    line-height: 32px;
+     line-height: 2.5vw;
+}
+}
+
