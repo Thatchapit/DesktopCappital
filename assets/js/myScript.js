@@ -10,7 +10,15 @@ var navbarHeight = $('header').outerHeight();
   });
 
   $(window).scroll(function(event){
+        var scroll = $(window).scrollTop();
       didScroll = true;
+
+            if(scroll > 300){
+        $('.fixed-action-btn').show();
+      }else{
+$('.fixed-action-btn').hide();
+      }
+
   });
 
   setInterval(function() {
@@ -24,6 +32,10 @@ var navbarHeight = $('header').outerHeight();
 
 
 
+    $(".totop").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
 
 function hasScrolled() {
     var st = $(this).scrollTop();
