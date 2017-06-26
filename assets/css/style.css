@@ -41,6 +41,10 @@ width: 100%;
     display: inline-block;
 }
 
+.menu-list a{
+  color:black;
+}
+
 .menu_item {
     display: inline-block;
     padding: 10px;
@@ -462,7 +466,7 @@ box-sizing: border-box;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    
+
 }
 
 .mini_iconSocial h6{
@@ -588,11 +592,17 @@ input[type=text]:focus:not([readonly]) {
   border: none;
   box-shadow: none;
 }
+
 .boxContenct {
   background-color: #E0E0E0;
   padding: 10px;
 }
 
+.imgProduct_detail{
+  width: 100%;
+  height: 450px;
+  background-color: red;
+}
 @media only screen and (min-width: 1120px) {
     .container {
         width: 95%;
@@ -646,4 +656,3 @@ input[type=text]:focus:not([readonly]) {
      line-height: 2.5vw;
 }
 }
-
